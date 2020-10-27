@@ -1,0 +1,44 @@
+{
+  "parks": {
+      "0" : {
+          "title" : "FDR Skatepark",
+          "longitude" : -75.176443,
+          "latitude" : 39.899861,
+          "description" : "skate park"
+      },
+      "1" : {
+          "title" : "Roc City Skatepark",
+          "longitude" : -77.608125,
+          "latitude" : 43.150860,
+          "description" : "skate park"
+      },
+      "2" : {
+          "title" : "SK8 Charleston",
+          "longitude" : -79.955830,
+          "latitude" : 32.818556,
+          "description" : "skate park"
+      },
+      "3" : {
+          "title" : "Venice Beach Skatepark",
+          "longitude" : -118.475288, 
+          "latitude" : 33.987127,
+          "description" : "skate park"
+      }
+  },
+  "shops": {
+      "0" : {
+          "title" : "Krudco",
+          "longitude" : -77.585991,
+          "latitude" : 43.149804,
+          "description" : "shop"
+      }
+  },
+  "spots": {
+      "0" : {
+          "title" : "West LA Courthouse",
+          "longitude" : -118.449681,
+          "latitude" : 34.045985,
+          "description" : "spot"
+      }
+  }
+}

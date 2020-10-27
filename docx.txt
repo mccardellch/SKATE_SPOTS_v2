@@ -1,0 +1,32 @@
+//basic write operations
+set() -> saves data to a specific reference, replaces any data at that path
+
+EXAMPLE: 
+    function writeUserData(userId, name, email, imageUrl) {
+      firebase.database().ref('users/' + userId).set({
+        username: name,
+        email: email,
+        profile_picture : imageUrl
+      });
+    }
+
+//listen for value events
+on() -> read data at a path and listen for changes (firebase.database.Rerence)
+
+event "value" -> read a static snapshot of the contents at a given path
+    - triggered once when the listener is attached
+    - triggered every time the data changes
+
+EXAMPLE: 
+    var starCountRef = firebase.database().ref('posts/' + postId + '/starCount');
+    starCountRef.on('value', function(snapshot) {
+      updateStarCount(postElement, snapshot.val());
+    });
+    
+ - a snapshot is received, which can be retrieved by the val()
+ 
+//read data once
+once() -> get snapshot without listening for changes
+    - triggers once and doesn't trigger again
+    - useful for data that loads once, or not frequently
+
